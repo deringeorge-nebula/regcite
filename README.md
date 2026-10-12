@@ -50,7 +50,39 @@ The agent loop is plain Python on purpose, so every step is visible. The same fo
 
 ## Results
 
-*To be filled from `results/eval_report.md` after running on the official text.*
+Official text downloaded on 13 Oct 2026 (eCFR, as of 8 Oct 2026): **248 sections**, 123 in 46 CFR Part 42 and 125 in 33 CFR Part 157. Full report: [`results/eval_report.md`](results/eval_report.md).
+
+**Finding the right section** (45 questions with a known answer section):
+
+| Split | Questions | Recall@1 | Recall@3 | Recall@5 | MRR |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| dev | 23 | 70% | 96% | 96% | 0.818 |
+| test | 22 | 82% | 100% | 100% | 0.909 |
+| all | 45 | 76% | 98% | 98% | 0.862 |
+
+**Refusing what the regulations do not cover.** The threshold (term coverage < 0.418) was chosen on the dev questions only. On the held-out test questions:
+- answerable questions answered: **22 of 22**
+- out-of-scope questions refused: **8 of 8** (lifejackets, ballast water standards, fire pumps and similar)
+
+**The quote check against tampered quotes.** Every sentence of 25–220 characters in the corpus was quoted as-is, then with one number changed and with "not" removed:
+- genuine quotes accepted: **1,410 of 1,410**
+- one number changed, rejected: **829 of 830**
+- "not" removed, rejected: **139 of 139**
+
+The one changed-number quote that passed is being traced. The likely cause is that the altered sentence also exists word for word elsewhere in the same section, in which case accepting it is correct.
+
+**One retrieval miss in the top 5.** *"Is it allowed to load a ship so that its load line marks are submerged?"* found the right section (42.07-10) only at rank 7. BM25 ranked 42.07-5 (*Marks placed on vessel*) first, because the question shares more words with it. This is the word-matching limit described below.
+
+**Live model, two questions only** (Google Gemini, free tier). This is a check that the loop works with a real model, not an evaluation:
+- *"What is the minimum bow height?"* answered in 3 steps; the quote from 46 CFR 42.20-70 passed the check.
+- *"How many lifejackets must a cargo ship carry?"* refused in 3 steps: neither regulation covers it.
+
+## What went wrong
+
+- **The download failed with HTTP 406.** The eCFR API requires compressed responses. Fixed by sending `Accept-Encoding: gzip` and decompressing.
+- **The first model names failed.** `gemini-1.5-flash` returned 404, and `gemini-2.5-flash` is no longer offered to new users. I listed the available models through the API and used `gemini-flash-latest`.
+- **The model service returned 503 (overloaded).** Added retries with back-off for 429 and 5xx responses.
+- **Not yet done:** running all 61 evaluation questions through the live agent. Today the agent has been checked by the 45 tests (scripted models) and two live questions.
 
 ## Tests
 
@@ -87,7 +119,7 @@ Agent mode with a free-tier model (example: Google Gemini):
 ```bash
 # Windows PowerShell: use  $env:REGCITE_PROVIDER="gemini"  etc.
 export REGCITE_PROVIDER=gemini
-export REGCITE_MODEL=<model name from Google AI Studio>
+export REGCITE_MODEL=gemini-flash-latest   # names change; list them via the API if this fails
 export REGCITE_API_KEY=<your key>
 python -m regcite agent "What is the minimum bow height?"
 ```
