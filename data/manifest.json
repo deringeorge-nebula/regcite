@@ -1,0 +1,23 @@
+{
+  "source": "https://www.ecfr.gov/api/versioner/v1",
+  "parts": [
+    {
+      "title": 46,
+      "part": "42",
+      "date": "2026-10-08",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-10-08/title-46.xml?part=42",
+      "file": "title-46-part-42.xml",
+      "bytes": 304838,
+      "sha256": "78838c838159646635afe2cd5b2c15a75e4d0b3d56a883bc9b31f7be23e43d44"
+    },
+    {
+      "title": 33,
+      "part": "157",
+      "date": "2026-10-08",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-10-08/title-33.xml?part=157",
+      "file": "title-33-part-157.xml",
+      "bytes": 278316,
+      "sha256": "ca38645f6be40f7dc58b9717166e052b34beb28493f5640a7a8d4b692108acad"
+    }
+  ]
+}

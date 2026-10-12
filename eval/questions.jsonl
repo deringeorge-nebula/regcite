@@ -1,0 +1,61 @@
+{"id": "a01", "question": "What is the minimum bow height a ship must have?", "gold": ["42.20-70"], "split": "dev"}
+{"id": "a02", "question": "How is the freeboard corrected when the block coefficient is greater than 0.68?", "gold": ["42.20-25"], "split": "test"}
+{"id": "a03", "question": "How is freeboard corrected for a ship whose depth is more than L/15?", "gold": ["42.20-30"], "split": "dev"}
+{"id": "a04", "question": "What extra freeboard correction applies to ships shorter than 328 feet?", "gold": ["42.20-20"], "split": "test"}
+{"id": "a05", "question": "How high must air pipes be above the deck?", "gold": ["42.15-50"], "split": "dev"}
+{"id": "a06", "question": "What height of coaming is required for ventilators on the freeboard deck?", "gold": ["42.15-45"], "split": "test"}
+{"id": "a07", "question": "How much freeing port area is required where bulwarks form wells on the weather deck?", "gold": ["42.15-70"], "split": "dev"}
+{"id": "a08", "question": "What guard rails or lifelines must be fitted to protect the crew?", "gold": ["42.15-75"], "split": "test"}
+{"id": "a09", "question": "What is required of side scuttles fitted below the freeboard deck?", "gold": ["42.15-65"], "split": "dev"}
+{"id": "a10", "question": "What information about loading and stability must be given to the master?", "gold": ["42.15-1"], "split": "test"}
+{"id": "a11", "question": "What extent of damage is assumed in the flooding calculations?", "gold": ["42.20-11", "42.20-6"], "split": "dev"}
+{"id": "a12", "question": "What conditions of equilibrium must a ship meet after flooding, such as the maximum angle of heel?", "gold": ["42.20-12"], "split": "test"}
+{"id": "a13", "question": "How is the load line mark made up, with its ring and horizontal line?", "gold": ["42.13-25", "42.13-40"], "split": "dev"}
+{"id": "a14", "question": "Which lines are used with the load line mark to show the summer, winter and tropical freeboards?", "gold": ["42.13-30"], "split": "test"}
+{"id": "a15", "question": "Where is the deck line marked on the side of the ship?", "gold": ["42.13-20"], "split": "dev"}
+{"id": "a16", "question": "Which vessels count as Type A for freeboard purposes?", "gold": ["42.09-5", "42.20-3", "42.13-15"], "split": "test"}
+{"id": "a17", "question": "What special conditions of assignment apply to Type A ships, such as gangways or catwalks?", "gold": ["42.15-80"], "split": "dev"}
+{"id": "a18", "question": "When must a vessel have an annual survey for its load line certificate?", "gold": ["42.09-40", "42.11-20"], "split": "test"}
+{"id": "a19", "question": "Is it allowed to load a ship so that its load line marks are submerged?", "gold": ["42.07-10"], "split": "dev"}
+{"id": "a20", "question": "What draft and freeboard entries must be made in the logbook before sailing?", "gold": ["42.07-20"], "split": "test"}
+{"id": "a21", "question": "What is the penalty for violating the load line regulations?", "gold": ["42.07-50"], "split": "dev"}
+{"id": "a22", "question": "What load line applies to small ships crossing the North Atlantic in winter?", "gold": ["42.30-35", "42.30-5"], "split": "test"}
+{"id": "a23", "question": "How must timber deck cargo be stowed and secured?", "gold": ["42.25-15"], "split": "dev"}
+{"id": "a24", "question": "Which classification societies may act as the assigning authority for load lines?", "gold": ["42.07-35", "42.07-40", "42.05-60", "42.05-10"], "split": "test"}
+{"id": "a25", "question": "How must weathertight steel hatch covers with gaskets and clamping devices be built?", "gold": ["42.15-30"], "split": "dev"}
+{"id": "a26", "question": "What reduction of freeboard is allowed for Type B ships that meet the flooding standard?", "gold": ["42.20-5", "42.20-7", "42.20-8"], "split": "test"}
+{"id": "a27", "question": "What is the standard height of a superstructure?", "gold": ["42.20-40"], "split": "dev"}
+{"id": "a28", "question": "How is the sheer of the freeboard deck taken into account in the freeboard?", "gold": ["42.20-65"], "split": "test"}
+{"id": "a29", "question": "Which tank vessels must be built with a double hull?", "gold": ["157.10d"], "split": "dev"}
+{"id": "a30", "question": "What capacity of segregated ballast tanks is required on new tankers?", "gold": ["157.09", "157.10", "157.10a"], "split": "test"}
+{"id": "a31", "question": "What oil content limits apply when a seagoing tanker discharges oily mixtures at sea?", "gold": ["157.29", "157.37"], "split": "dev"}
+{"id": "a32", "question": "What must the oil discharge monitoring and control system do?", "gold": ["157.12", "157.12a", "157.12b", "157.12c", "157.12d"], "split": "test"}
+{"id": "a33", "question": "How large must slop tanks be on a tank vessel?", "gold": ["157.15"], "split": "dev"}
+{"id": "a34", "question": "What limits apply to the size and arrangement of cargo tanks?", "gold": ["157.19"], "split": "test"}
+{"id": "a35", "question": "How is the accidental oil outflow performance of a tanker calculated?", "gold": ["157.20"], "split": "dev"}
+{"id": "a36", "question": "What intact stability criteria must oil tankers meet in all loading conditions?", "gold": ["157.22"], "split": "test"}
+{"id": "a37", "question": "What subdivision and damage stability requirements apply to tank vessels?", "gold": ["157.21"], "split": "dev"}
+{"id": "a38", "question": "Who may be the person in charge of crude oil washing operations?", "gold": ["157.152"], "split": "test"}
+{"id": "a39", "question": "Must the inert gas system be operating during crude oil washing?", "gold": ["157.164"], "split": "dev"}
+{"id": "a40", "question": "What protection is required at the bottom of the pump room?", "gold": ["157.14"], "split": "test"}
+{"id": "a41", "question": "What tank for oil residue or sludge must a tank vessel have?", "gold": ["157.17"], "split": "dev"}
+{"id": "a42", "question": "What minimum under-keel clearance must single-hull tankers keep when entering port?", "gold": ["157.455"], "split": "test"}
+{"id": "a43", "question": "What information on the cargo and ballast systems must be provided on board?", "gold": ["157.23", "157.47"], "split": "dev"}
+{"id": "a44", "question": "When may water ballast be carried in fuel oil tanks?", "gold": ["157.33"], "split": "test"}
+{"id": "a45", "question": "What emergency lightering plans are required for oil tankers without double hulls?", "gold": ["157.410"], "split": "dev"}
+{"id": "u01", "question": "What is the severe wind and rolling criterion for intact stability?", "gold": [], "split": "dev"}
+{"id": "u02", "question": "How many lifejackets must a cargo ship carry for each person on board?", "gold": [], "split": "test"}
+{"id": "u03", "question": "What is the sulphur limit for fuel oil used in an emission control area?", "gold": [], "split": "dev"}
+{"id": "u04", "question": "What is the D-2 ballast water discharge standard for living organisms?", "gold": [], "split": "test"}
+{"id": "u05", "question": "How many hours of rest must seafarers have in any 24-hour period?", "gold": [], "split": "dev"}
+{"id": "u06", "question": "What fire detection system is required in unattended machinery spaces?", "gold": [], "split": "test"}
+{"id": "u07", "question": "What is the phase 3 EEDI reduction factor for container ships?", "gold": [], "split": "dev"}
+{"id": "u08", "question": "How must garbage be sorted and recorded under MARPOL Annex V?", "gold": [], "split": "test"}
+{"id": "u09", "question": "What noise levels are permitted in crew cabins?", "gold": [], "split": "dev"}
+{"id": "u10", "question": "How are lifeboat davits tested during the annual inspection?", "gold": [], "split": "test"}
+{"id": "u11", "question": "What speed limit applies to vessels in right whale seasonal management areas?", "gold": [], "split": "dev"}
+{"id": "u12", "question": "What medical stores must be carried on ocean-going ships?", "gold": [], "split": "test"}
+{"id": "u13", "question": "What data must the voyage data recorder store?", "gold": [], "split": "dev"}
+{"id": "u14", "question": "How many fire pumps must a cargo ship of 2000 gross tons have?", "gold": [], "split": "test"}
+{"id": "u15", "question": "What certificate must a ship's cook hold?", "gold": [], "split": "dev"}
+{"id": "u16", "question": "How should liquefied natural gas fuel tanks be insulated?", "gold": [], "split": "test"}

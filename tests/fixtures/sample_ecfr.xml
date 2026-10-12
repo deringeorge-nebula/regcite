@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TEST FIXTURE ONLY. Fictional regulation text in the eCFR XML layout
+     (DIVn elements with TYPE="SECTION"). It is not real law. -->
+<DIV5 N="9" TYPE="PART">
+  <HEAD>PART 9—FICTIONAL HARBOUR CRAFT RULES</HEAD>
+  <DIV6 N="9.10" TYPE="SUBPART">
+    <HEAD>Subpart 9.10—Freeboard and Openings</HEAD>
+    <DIV8 N="9.10-5" TYPE="SECTION">
+      <HEAD>§ 9.10-5   Minimum bow height.</HEAD>
+      <P>(a) The bow height of a harbour craft must be not less than 1.25 metres measured at the forward perpendicular.</P>
+      <P>(b) A craft shorter than 12 metres may have a bow height of 0.90 metres if it is fitted with a <I>weathertight</I> forecastle.</P>
+      <CITA>[CGD 99-001, 99 FR 1234, Jan. 1, 2099]</CITA>
+    </DIV8>
+    <DIV8 N="9.10-10" TYPE="SECTION">
+      <HEAD>§ 9.10-10   Air pipes.</HEAD>
+      <P>(a) Air pipes on the weather deck must extend at least 760 millimetres above the deck.</P>
+      <P>(b) Each air pipe must have a permanently attached means of closing.</P>
+    </DIV8>
+    <DIV8 N="9.10-15" TYPE="SECTION">
+      <HEAD>§ 9.10-15   Freeing ports.</HEAD>
+      <P>(a) Where bulwarks form wells, freeing ports must be provided with the minimum area given in the following table.</P>
+      <GPOTABLE COLS="2">
+        <BOXHD><CHED>Bulwark length (m)</CHED><CHED>Freeing port area (m2)</CHED></BOXHD>
+        <ROW><ENT>10</ENT><ENT>0.70</ENT></ROW>
+        <ROW><ENT>20</ENT><ENT>1.40</ENT></ROW>
+      </GPOTABLE>
+    </DIV8>
+    <DIV8 N="9.10-20" TYPE="SECTION">
+      <HEAD>§ 9.10-20   [Reserved]</HEAD>
+    </DIV8>
+  </DIV6>
+  <DIV6 N="9.20" TYPE="SUBPART">
+    <HEAD>Subpart 9.20—Discharges</HEAD>
+    <DIV8 N="9.20-1" TYPE="SECTION">
+      <HEAD>§ 9.20-1   Oily water discharge.</HEAD>
+      <P>(a) A harbour craft must not discharge oily water containing more than 15 parts per million of oil.</P>
+      <P>(b) Discharges are not permitted within 3 nautical miles of the nearest land.</P>
+    </DIV8>
+  </DIV6>
+</DIV5>
